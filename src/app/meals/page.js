@@ -2,7 +2,9 @@ import React from 'react'
 
 function MealsPage() {
    return (
-      <div>MealsPage</div>
+      <div>
+         <p className='transition animate-slide'>TEXT</p>
+      </div>
    )
 }
 
