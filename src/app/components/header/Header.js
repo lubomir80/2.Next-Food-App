@@ -11,7 +11,7 @@ function Header() {
          <MainHeaderBackground />
          <header className='flex justify-between items-center px-8 py-[10%]
       tablet:py-4'>
-            <Link href="/" className='flex items-center justify-center gap-8 text-text-orange font-bold uppercase font-mono tracking-widest text-2xl'>
+            <Link href="/" className='flex items-center justify-center gap-8 text-text font-bold uppercase font-mono tracking-widest text-2xl'>
                <Image src="/logo.png" alt='logo'
                   priority width={80} height={80}
                   style={{ objectFit: "contain" }} className='drop-shadow-xl' />

@@ -24,7 +24,7 @@ function Navbar() {
             {navbarLinks.map(({ href, title }) => (
                <li key={title}>
                   <Link
-                     className={`font-bold px-2 py-4 rounded-sm text-text-orange ${linkStyleHover} `}
+                     className={`font-bold px-2 py-4 rounded-sm text-text ${linkStyleHover} `}
                      href={href}>{title}
                   </Link>
                </li>

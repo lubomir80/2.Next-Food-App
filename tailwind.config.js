@@ -9,11 +9,12 @@ module.exports = {
       extend: {
          backgroundImage: {
             "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-            "gradient-conic":
-               "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            'orange': "linear-gradient(90deg, #f9572a, #ff8a05)",
+            'lightOrange': "linear-gradient(90deg, #fd4715, #f9b241)"
          },
          colors: {
-            "text-orange": "#ddd6cb"
+            "text": "#ddd6cb"
          },
          screens: {
             'phone': "640px",

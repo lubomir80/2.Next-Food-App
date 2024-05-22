@@ -1,10 +1,14 @@
+import Image from 'next/image'
 import React from 'react'
 
+
+
 function MealsPage() {
+
    return (
-      <div>
-         <p className='transition animate-slide'>TEXT</p>
-      </div>
+      <>
+         <div>Meals page</div>
+      </>
    )
 }
 
