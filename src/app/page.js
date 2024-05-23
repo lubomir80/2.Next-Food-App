@@ -18,10 +18,10 @@ export default function Home() {
                   <p>Taste & enjoy</p>
                </div>
                <div className="text-2xl flex gap-4">
-                  <Link href="/community" className={`inline-block mt-4 py-2 px-4 rounded-md bg-orange hover:bg-lightOrange`}
+                  <Link href="/community" className="inline-block mt-4 py-2 px-4 rounded-md bg-orange hover:bg-lightOrange"
                   >Join the Community
                   </Link>
-                  <Link href="/meals" className={`inline-block mt-4 py-2 px-4 rounded-md bg-orange hover:bg-lightOrange`}>
+                  <Link href="/meals" className="inline-block mt-4 py-2 px-4 rounded-md bg-orange hover:bg-lightOrange">
                      Explore Meals
                   </Link>
                </div>
