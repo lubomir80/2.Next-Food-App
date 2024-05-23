@@ -4,7 +4,7 @@ import React from 'react'
 function CommunityPage() {
    return (
       <>
-         <header className=" mt-12 mb-20 mx-auto w-[90%] max-w-[75rem] text-text text-3xl text-center font-mono ">
+         <header className="gap-3 mt-12 mb-20 mx-auto w-[90%] max-w-[75rem] text-text text-3xl text-center font-mono ">
             <h1 className='mb-2 text-5xl'>
                One shared passion: <span>Food</span>
             </h1>
