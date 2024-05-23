@@ -13,11 +13,11 @@ export default function Home() {
             </div>
             <div>
                <div className="text-text text-2xl">
-                  <h1 className={`text-3xl mb-2 font-bold font-mono tracking-wide uppercase bg-orange text-transparent bg-clip-text`}>
+                  <h1 className={`text-4xl mb-2 font-bold font-mono tracking-wide uppercase bg-orange text-transparent bg-clip-text`}>
                      NextFood for everyone</h1>
                   <p>Taste & enjoy</p>
                </div>
-               <div className="text-2xl flex gap-4">
+               <div className="text-xl flex gap-4">
                   <Link href="/community" className="inline-block mt-4 py-2 px-4 rounded-md bg-orange hover:bg-lightOrange"
                   >Join the Community
                   </Link>

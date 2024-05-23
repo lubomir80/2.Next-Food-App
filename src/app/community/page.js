@@ -5,10 +5,10 @@ function CommunityPage() {
    return (
       <>
          <header className="gap-3 mt-12 mb-20 mx-auto w-[90%] max-w-[75rem] text-text text-3xl text-center font-mono ">
-            <h1 className='mb-2 text-5xl'>
+            <h1 className='mb-2 text-5xl font-bold'>
                One shared passion: <span>Food</span>
             </h1>
-            <p className="bg-orange text-transparent bg-clip-text">
+            <p className="bg-orange text-transparent text-2xl font-bold bg-clip-text">
                Join our community and share your favorite recipes!
             </p>
          </header>
