@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import MealsGrid from '../components/meals/Meals-Grid'
+import { getMeals } from '../../../lis/meals.'
 
 
 
-function MealsPage() {
-   const meals = [{}]
+async function MealsPage() {
+   const meals = await getMeals()
 
 
    return (
