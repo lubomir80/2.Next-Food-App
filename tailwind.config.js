@@ -11,7 +11,8 @@ module.exports = {
             "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
             "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             'orange': "linear-gradient(90deg, #f9572a, #ff8a05)",
-            'lightOrange': "linear-gradient(90deg, #fd4715, #f9b241)"
+            'lightOrange': "linear-gradient(90deg, #fd4715, #f9b241)",
+            'meal': "linear-gradient(90deg, #2c1e19, #25200f)"
          },
          colors: {
             "text": "#ddd6cb"
@@ -37,13 +38,23 @@ module.exports = {
          },
          animation: {
             'slide': 'slide 0.5s ease-out',
+            'loading': 'loading 0.3s ease-in-out'
          },
          keyframes: {
             slide: {
                '0%': { transform: 'scale(1.1) translateX(-1rem) rotate(-5deg)' },
                '100%': { transform: 'scale(1) translateX(0rem) rotate(0deg)' },
+            },
+            loading: {
+               '0%': { color: '#e9e9e9' },
+               '50%': { color: '#b89b84' },
+               '100%': { color: '#e9e9e9' },
             }
+         },
+         gridTemplateColumns: {
+            "meal": "repeat(auto-fill, minmax(20rem, 1fr))"
          }
+
 
       },
    },
