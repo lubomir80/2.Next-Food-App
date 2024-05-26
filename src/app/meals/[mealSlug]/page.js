@@ -1,13 +1,18 @@
 import React from 'react'
-import { getMeal } from '../../../../lis/meals.'
 import Image from 'next/image';
+import { getMeal } from '../../../../lis/meals.'
+import { notFound } from 'next/navigation';
 
 
 function MealItemPage({ params }) {
    const meal = getMeal(params.mealSlug)
 
-   const { title, image, summary, instructions, creator, creator_email } = meal;
+   if (!meal) {
+      notFound()
+   }
 
+   let { title, image, summary, instructions, creator, creator_email } = meal;
+   instructions = instructions.replace(/\n/g, '<br/>')
 
    return (
       <>
@@ -31,7 +36,7 @@ function MealItemPage({ params }) {
          animate-slideBottom
          '>
             <p dangerouslySetInnerHTML={{
-               __html: instructions.replace(/\n/g, '<br/>')
+               __html: instructions
             }}>
             </p>
          </main>

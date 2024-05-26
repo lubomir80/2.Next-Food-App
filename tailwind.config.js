@@ -38,12 +38,34 @@ module.exports = {
          },
          animation: {
             'slide': 'slide 0.5s ease-out',
+            'slideLeft': 'slideLeft 1s ease-out forwards',
+            'slideRight': 'slideRight 1s ease-out forwards',
+            'slideBottom': 'slideBottom 1s ease-out forwards',
+            'flash': 'flash 1s ease-in-out infinite alternate',
             'loading': 'loading 0.3s ease-in-out'
+
          },
          keyframes: {
             slide: {
                '0%': { transform: 'scale(1.1) translateX(-1rem) rotate(-5deg)' },
                '100%': { transform: 'scale(1) translateX(0rem) rotate(0deg)' },
+            },
+            slideLeft: {
+               '0%': { opacity: "0", transform: "translateX(-1rem)" },
+               '100%': { opacity: "1", transform: "translateX(0rem)" }
+            },
+            slideRight: {
+               '0%': { opacity: "0", transform: "translateX(1rem)" },
+               '100%': { opacity: "1", transform: "translateX(0rem)" }
+            },
+            slideBottom: {
+               '0%': { opacity: "0", transform: "translateY(1rem)" },
+               '100%': { opacity: "1", transform: "translateY(0rem)" }
+            },
+            flash: {
+               '0%': { opacity: "0" },
+               '50%': { opacity: "1" },
+               '100%': { opacity: "0" }
             },
             loading: {
                '0%': { color: '#e9e9e9' },
