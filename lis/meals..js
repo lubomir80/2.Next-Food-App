@@ -7,3 +7,8 @@ export async function getMeals() {
    // throw new Error("Loading meals faild")
    return db.prepare("SELECT * FROM meals").all();
 }
+
+export function getMeal(slug) {
+   // throw new Error("Loading meal faild")
+   return db.prepare('SELECT * FROM meals WHERE slug = ?').get(slug);
+}
