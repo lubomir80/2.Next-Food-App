@@ -12,7 +12,8 @@ module.exports = {
             "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             'orange': "linear-gradient(90deg, #f9572a, #ff8a05)",
             'lightOrange': "linear-gradient(90deg, #fd4715, #f9b241)",
-            'meal': "linear-gradient(90deg, #2c1e19, #25200f)"
+            'meal': "linear-gradient(90deg, #2c1e19, #25200f)",
+            'disable': "linear-gradient(0deg, #9b9a9c, #9b9a9c)"
          },
          colors: {
             "text": "#ddd6cb"
