@@ -1,6 +1,13 @@
 import React from 'react'
+import { getMeal } from '../../../../lis/meals.'
+import { notFound } from 'next/navigation'
 
 function MealItemPage({ params }) {
+   const meal = getMeal(params.mealSlug)
+
+   if (!meal) {
+      notFound()
+   }
 
    return (
       <>
@@ -16,7 +23,7 @@ function MealItemPage({ params }) {
                >by <a
                   className='bg-orange font-bold text-transparent bg-clip-text
                hover:bg-lightOrange hover:text-shadow:_0_0_18px_rgba(248_190_42_/_80%)'
-                  href={`mailto:${"mail"}`}>{"creator"}</a></p>
+                  href={`mailto:${"mail"}`}>{meal.creator}</a></p>
                <p className='text-2xl'>{"summary"}</p>
             </div>
          </header>
