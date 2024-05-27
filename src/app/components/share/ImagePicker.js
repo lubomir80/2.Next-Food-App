@@ -41,7 +41,8 @@ export default function ImagePicker({ lable, name }) {
                type="file"
                id={name}
                name={name}
-               accept='image/png, image/jpeg' />
+               accept='image/png, image/jpeg'
+               required />
             <button
                onClick={handlePickClick}
                className='py-2 px-6 bg-[#a4abb9] rounded-sm cursor-pointer hover:bg-[#b3b9c6] focus:bg-[#b3b9c6]'
