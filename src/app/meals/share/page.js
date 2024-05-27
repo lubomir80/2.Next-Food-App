@@ -1,6 +1,7 @@
+import React from 'react'
 import ImagePicker from '@/app/components/share/ImagePicker'
 import InputShareForm from '@/app/components/share/InputShareForm'
-import React from 'react'
+import { shareMeal } from '../../../../lis/actions'
 
 function ShareMealPage() {
    return (
@@ -14,7 +15,7 @@ function ShareMealPage() {
             </p>
          </header>
          <main className='w-[90%] max-w-[75rem] my-12 mx-auto color-white'>
-            <form className='max-w-[50rem]'>
+            <form className='max-w-[50rem]' action={shareMeal}>
                <div className='flex gap-3'>
                   <InputShareForm className="w-full" type="text" name="name">Your name</InputShareForm>
                   <InputShareForm className="w-full" type="email" name="email">Your email</InputShareForm>
@@ -22,7 +23,7 @@ function ShareMealPage() {
                <InputShareForm type="text" name="title">Title</InputShareForm>
                <InputShareForm type="text" name="summary">Short summary</InputShareForm>
                <InputShareForm area={true} rows="10" name="instructions">Instructions</InputShareForm>
-               <ImagePicker />
+               <ImagePicker lable="Your image" name="image" />
                <p className='text-right'>
                   <button
                      type='submit'

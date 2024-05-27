@@ -27,7 +27,7 @@ export default function ImagePicker({ lable, name }) {
 
 
    return (
-      <div className=''>
+      <div>
          <label htmlFor={name}>{lable}</label>
          <div className='flex items-start gap-6 my-4'>
             <div className='w-40 h-40 border-2 border-[#a4abb9] flex justify-center items-center text-center color-[#a4abb9] relative'>
