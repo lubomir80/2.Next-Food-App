@@ -2,8 +2,10 @@ import React from 'react'
 import ImagePicker from '@/app/components/share/ImagePicker'
 import InputShareForm from '@/app/components/share/InputShareForm'
 import { shareMeal } from '../../../../lis/actions'
+import FormSubmit from '@/app/components/share/FormSubmit'
 
 function ShareMealPage() {
+
    return (
       <>
          <header className='gap-12 mt-12 mx-auto mb-20 w-[90%] colot-text text-2xl'>
@@ -25,13 +27,7 @@ function ShareMealPage() {
                <InputShareForm area={true} rows="10" name="instructions">Instructions</InputShareForm>
                <ImagePicker lable="Your image" name="image" />
                <p className='text-right'>
-                  <button
-                     type='submit'
-                     className='py-3 border-0 px-8 bg-orange text-white rounded-md cursor-pointer text-xl shadow-sm shadow-stone-800
-                     hover:bg-lightOrange focus:bg-lightOrange disabled:bg-disable disabled:text-600 disabled:cursor-not-allowed
-                  ' >
-                     Share Meal
-                  </button>
+                  <FormSubmit />
                </p>
             </form>
          </main>
