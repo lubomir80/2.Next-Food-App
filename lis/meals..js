@@ -7,9 +7,12 @@ import { v4 as uuidv4 } from 'uuid';
 const db = sql("meals.db");
 
 export async function getMeals() {
-   await new Promise((resolve) => setTimeout(resolve, 2000))
-   // throw new Error("Loading meals faild")
+   await new Promise((resolve) => setTimeout(resolve, 500))
    return db.prepare("SELECT * FROM meals").all();
+}
+
+export function getMeal(slug) {
+   return db.prepare('SELECT * FROM meals WHERE slug = ?').get(slug);
 }
 
 
@@ -45,4 +48,5 @@ export async function saveMeal(meal) {
       @creator_email
    )
    `).run(meal)
+
 }
