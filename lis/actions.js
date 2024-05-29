@@ -30,7 +30,6 @@ export async function shareMeal(prevState, formData) {
       return {
          message: "Invalid input."
       }
-      throw new Error("Invalid Input")
    }
 
 
