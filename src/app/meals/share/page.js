@@ -1,3 +1,6 @@
+"use client"
+
+import { useFormState } from "react-dom"
 import React from 'react'
 import ImagePicker from '@/app/components/share/ImagePicker'
 import InputShareForm from '@/app/components/share/InputShareForm'
@@ -5,6 +8,7 @@ import { shareMeal } from '../../../../lis/actions'
 import FormSubmit from '@/app/components/share/FormSubmit'
 
 function ShareMealPage() {
+   const [state, formAction] = useFormState(shareMeal, { nessage: null })
 
    return (
       <>
@@ -17,7 +21,7 @@ function ShareMealPage() {
             </p>
          </header>
          <main className='w-[90%] max-w-[75rem] my-12 mx-auto color-white'>
-            <form className='max-w-[50rem]' action={shareMeal}>
+            <form className='max-w-[50rem]' action={formAction}>
                <div className='flex gap-3'>
                   <InputShareForm className="w-full" type="text" name="name">Your name</InputShareForm>
                   <InputShareForm className="w-full" type="email" name="email">Your email</InputShareForm>
@@ -26,6 +30,10 @@ function ShareMealPage() {
                <InputShareForm type="text" name="summary">Short summary</InputShareForm>
                <InputShareForm area={true} rows="10" name="instructions">Instructions</InputShareForm>
                <ImagePicker lable="Your image" name="image" />
+               {state.message &&
+                  <p className="text-red-500 text-2xl font-bold ">
+                     {state.message}
+                  </p>}
                <p className='text-right'>
                   <FormSubmit />
                </p>
