@@ -7,7 +7,7 @@ import InputShareForm from '@/app/components/share/InputShareForm'
 import { shareMeal } from '../../../../lis/actions'
 import FormSubmit from '@/app/components/share/FormSubmit'
 
-export function ShareMealPage() {
+export default function ShareMealPage() {
    const [state, formAction] = useFormState(shareMeal, { nessage: null })
 
    return (
